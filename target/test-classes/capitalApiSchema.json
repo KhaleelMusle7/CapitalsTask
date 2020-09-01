@@ -1,0 +1,335 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "topLevelDomain": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "alpha2Code": {
+          "type": "string"
+        },
+        "alpha3Code": {
+          "type": "string"
+        },
+        "callingCodes": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "capital": {
+          "type": "string"
+        },
+        "altSpellings": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "region": {
+          "type": "string"
+        },
+        "subregion": {
+          "type": "string"
+        },
+        "population": {
+          "type": "integer"
+        },
+        "latlng": {
+          "type": "array",
+          "items": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "demonym": {
+          "type": "string"
+        },
+        "area": {
+          "type": "number"
+        },
+        "gini": {
+          "type": "number"
+        },
+        "timezones": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "borders": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "nativeName": {
+          "type": "string"
+        },
+        "numericCode": {
+          "type": "string"
+        },
+        "currencies": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "symbol": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "name",
+                "symbol"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "symbol": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "name",
+                "symbol"
+              ]
+            }
+          ]
+        },
+        "languages": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "iso639_1": {
+                  "type": "string"
+                },
+                "iso639_2": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "nativeName": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "iso639_1",
+                "iso639_2",
+                "name",
+                "nativeName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "iso639_1": {
+                  "type": "string"
+                },
+                "iso639_2": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "nativeName": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "iso639_1",
+                "iso639_2",
+                "name",
+                "nativeName"
+              ]
+            }
+          ]
+        },
+        "translations": {
+          "type": "object",
+          "properties": {
+            "de": {
+              "type": "string"
+            },
+            "es": {
+              "type": "string"
+            },
+            "fr": {
+              "type": "string"
+            },
+            "ja": {
+              "type": "string"
+            },
+            "it": {
+              "type": "string"
+            },
+            "br": {
+              "type": "string"
+            },
+            "pt": {
+              "type": "string"
+            },
+            "nl": {
+              "type": "string"
+            },
+            "hr": {
+              "type": "string"
+            },
+            "fa": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "de",
+            "es",
+            "fr",
+            "ja",
+            "it",
+            "br",
+            "pt",
+            "nl",
+            "hr",
+            "fa"
+          ]
+        },
+        "flag": {
+          "type": "string"
+        },
+        "regionalBlocs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "acronym": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "otherAcronyms": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "otherNames": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "acronym",
+                "name",
+                "otherAcronyms",
+                "otherNames"
+              ]
+            }
+          ]
+        },
+        "cioc": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "topLevelDomain",
+        "alpha2Code",
+        "alpha3Code",
+        "callingCodes",
+        "capital",
+        "altSpellings",
+        "region",
+        "subregion",
+        "population",
+        "latlng",
+        "demonym",
+        "area",
+        "gini",
+        "timezones",
+        "borders",
+        "nativeName",
+        "numericCode",
+        "currencies",
+        "languages",
+        "translations",
+        "flag",
+        "regionalBlocs",
+        "cioc"
+      ]
+    }
+  ]
+}
